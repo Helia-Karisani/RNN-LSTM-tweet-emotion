@@ -1,7 +1,6 @@
 
 ---
 
-```markdown
 # RNN-LSTM-tweet-emotion
 Deep learning model using RNN-BiLSTM to detect emotions from tweets
 
@@ -95,10 +94,7 @@ Random sample prediction:
 Sentence: "i just want that feeling of not caring about unnecessary stuff like i felt before"
 Predicted Emotion: love
 
-```
-```
-
----
+````
 
 ---
 
@@ -116,13 +112,13 @@ The `show_history()` function plots **accuracy** and **loss** across epochs for 
 
 This heatmap displays the model’s **classification performance per emotion**:
 
-* **Rows** = True emotion labels
-* **Columns** = Predicted emotion labels
-* **Bright diagonal cells** = Correct predictions
-* **Off-diagonal cells** = Misclassifications
+- **Rows** = True emotion labels  
+- **Columns** = Predicted emotion labels  
+- **Bright diagonal cells** = Correct predictions  
+- **Off-diagonal cells** = Misclassifications  
 
-**Interpretation:**
-The matrix shows strong diagonal dominance, confirming that the model predicts most emotions correctly.
+**Interpretation:**  
+The matrix shows strong diagonal dominance, confirming that the model predicts most emotions correctly.  
 Occasional confusion occurs between semantically similar emotions — for example, *joy* and *love*, or *sadness* and *fear*, which is natural due to overlap in emotional expression.
 
 ---
@@ -133,7 +129,7 @@ Make sure the following packages are installed:
 
 ```bash
 pip install tensorflow numpy matplotlib datasets
-```
+````
 
 Optional (for Hugging Face integration):
 
@@ -168,8 +164,4 @@ pip install nlp
 
 * **Dataset:** [dair-ai/emotion](https://github.com/dair-ai/emotion_dataset)
 * **Frameworks:** TensorFlow, Keras, Hugging Face Datasets
-
----
-
-
 
