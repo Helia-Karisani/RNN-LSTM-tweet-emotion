@@ -1,7 +1,10 @@
+
+```
 # RNN-LSTM-tweet-emotion
 Deep learning model using RNN-BiLSTM to detect emotions from tweets
 
-```
+---
+
 # 🧠 Tweet Emotion Recognition with TensorFlow
 
 This project demonstrates how to build and train a **Tweet Emotion Recognition model** using **TensorFlow** and the **Hugging Face Emotion Dataset**.  
@@ -12,6 +15,7 @@ The model classifies tweets into six basic emotions: `sadness`, `joy`, `love`, `
 ## 🚀 Project Overview
 
 This project walks through a full **Natural Language Processing (NLP)** pipeline for emotion classification on tweets:
+
 1. **Data loading** from Hugging Face's public *emotion* dataset  
 2. **Preprocessing** using Keras Tokenizer (word-to-index mapping and padding)  
 3. **Model design** using a bidirectional LSTM architecture  
@@ -61,6 +65,7 @@ The architecture is built with TensorFlow’s `Sequential` API:
 - **Vocabulary size:** 10,000 most frequent words
 
 During training:
+
 ```
 
 Final validation accuracy: ~0.88
@@ -94,9 +99,11 @@ Predicted Emotion: love
 
 The `show_history()` function plots **accuracy** and **loss** across epochs for both training and validation sets, helping track convergence and overfitting.
 
-### 2. Confusion Matrix – `heatmap_result`
+### 2. Confusion Matrix — `heatmap_result`
 
-![heatmap\_result](heatmap_result.png)
+<p align="center">
+  <img src="heatmap_result.png" alt="Confusion Matrix Heatmap" width="550"/>
+</p>
 
 This heatmap displays the model’s **classification performance per emotion**:
 
@@ -129,24 +136,31 @@ pip install nlp
 
 ## 🧑‍💻 How to Run
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/<your-username>/tweet-emotion-recognition.git
-   cd tweet-emotion-recognition
+   git clone https://github.com/Helia-Karisani/RNN-LSTM-tweet-emotion.git
+   cd RNN-LSTM-tweet-emotion
    ```
-2. Open the notebook:
+
+2. **Open the notebook:**
 
    ```bash
    jupyter notebook Tweet_Emotion_Recognition.ipynb
    ```
-3. Run all cells or open the Colab link provided.
-4. (Optional) To reproduce the final evaluation, ensure the Hugging Face dataset downloads successfully.
+
+3. **Run all cells** or open the project in **Google Colab**.
+
+4. *(Optional)* To reproduce the final evaluation, ensure the Hugging Face dataset downloads successfully.
 
 ---
 
 ## 🧾 Credits
+
 * **Dataset:** [dair-ai/emotion](https://github.com/dair-ai/emotion_dataset)
 * **Frameworks:** TensorFlow, Keras, Hugging Face Datasets
+
 ---
+
+
 
