@@ -1,7 +1,7 @@
 # RNN-LSTM-tweet-emotion
 Deep learning model using RNN-BiLSTM to detect emotions from tweets
 
-```markdown
+```
 # 🧠 Tweet Emotion Recognition with TensorFlow
 
 This project demonstrates how to build and train a **Tweet Emotion Recognition model** using **TensorFlow** and the **Hugging Face Emotion Dataset**.  
