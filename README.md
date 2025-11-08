@@ -1,11 +1,13 @@
 
-```
+---
+
+```markdown
 # RNN-LSTM-tweet-emotion
 Deep learning model using RNN-BiLSTM to detect emotions from tweets
 
 ---
 
-# 🧠 Tweet Emotion Recognition with TensorFlow
+## 🧠 Tweet Emotion Recognition with TensorFlow
 
 This project demonstrates how to build and train a **Tweet Emotion Recognition model** using **TensorFlow** and the **Hugging Face Emotion Dataset**.  
 The model classifies tweets into six basic emotions: `sadness`, `joy`, `love`, `anger`, `fear`, and `surprise`.
@@ -59,10 +61,10 @@ The architecture is built with TensorFlow’s `Sequential` API:
 
 ## ⚙️ Training Details
 
-- **Epochs:** up to 20 (with early stopping)
-- **Validation monitoring:** `val_accuracy`
-- **Padding:** tweets truncated or padded to length 50
-- **Vocabulary size:** 10,000 most frequent words
+- **Epochs:** up to 20 (with early stopping)  
+- **Validation monitoring:** `val_accuracy`  
+- **Padding:** tweets truncated or padded to length 50  
+- **Vocabulary size:** 10,000 most frequent words  
 
 During training:
 
@@ -71,7 +73,7 @@ During training:
 Final validation accuracy: ~0.88
 Final validation loss: ~0.44
 
-````
+```
 
 ---
 
@@ -79,17 +81,24 @@ Final validation loss: ~0.44
 
 After training, the model was evaluated on the **test set (2,000 tweets)**:
 
-```text
+```
+
 Test accuracy: 0.8805
 Test loss: 0.4871
-````
+
+```
 
 Random sample prediction:
 
 ```
+
 Sentence: "i just want that feeling of not caring about unnecessary stuff like i felt before"
 Predicted Emotion: love
+
 ```
+```
+
+---
 
 ---
 
