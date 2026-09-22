@@ -6,14 +6,14 @@ Deep learning model using RNN-BiLSTM to detect emotions from tweets
 
 ---
 
-## 🧠 Tweet Emotion Recognition with TensorFlow
+## Tweet Emotion Recognition with TensorFlow
 
 This project demonstrates how to build and train a **Tweet Emotion Recognition model** using **TensorFlow** and the **Hugging Face Emotion Dataset**.  
 The model classifies tweets into six basic emotions: `sadness`, `joy`, `love`, `anger`, `fear`, and `surprise`.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project walks through a full **Natural Language Processing (NLP)** pipeline for emotion classification on tweets:
 
@@ -27,7 +27,7 @@ The final model achieves an accuracy of approximately **88%** on the test set.
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 **Source:** [Hugging Face – Emotion Dataset](https://github.com/dair-ai/emotion_dataset)
 
@@ -41,7 +41,7 @@ Each sample is a short tweet labeled with one of six emotions.
 
 ---
 
-## 🧩 Model Architecture
+## Model Architecture
 
 The architecture is built with TensorFlow’s `Sequential` API:
 
@@ -58,7 +58,7 @@ The architecture is built with TensorFlow’s `Sequential` API:
 
 ---
 
-## ⚙️ Training Details
+## Training Details
 
 - **Epochs:** up to 20 (with early stopping)  
 - **Validation monitoring:** `val_accuracy`  
@@ -76,7 +76,7 @@ Final validation loss: ~0.44
 
 ---
 
-## 🧪 Evaluation
+## Evaluation
 
 After training, the model was evaluated on the **test set (2,000 tweets)**:
 
@@ -98,7 +98,7 @@ Predicted Emotion: love
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 
 ### 1. Training History
 
@@ -123,7 +123,7 @@ Occasional confusion occurs between semantically similar emotions — for exampl
 
 ---
 
-## 🧰 Dependencies
+## Dependencies
 
 Make sure the following packages are installed:
 
@@ -139,7 +139,7 @@ pip install nlp
 
 ---
 
-## 🧑‍💻 How to Run
+## How to Run
 
 1. **Clone the repository:**
 
@@ -160,7 +160,7 @@ pip install nlp
 
 ---
 
-## 🧾 Credits
+## Credits
 
 * **Dataset:** [dair-ai/emotion](https://github.com/dair-ai/emotion_dataset)
 * **Frameworks:** TensorFlow, Keras, Hugging Face Datasets
