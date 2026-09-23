@@ -104,7 +104,7 @@ Predicted Emotion: love
 
 The `show_history()` function plots **accuracy** and **loss** across epochs for both training and validation sets, helping track convergence and overfitting.
 
-### 2. Confusion Matrix — `heatmap_result`
+### 2. Confusion Matrix, `heatmap_result`
 
 <p align="center">
   <img src="heatmap_result.png" alt="Confusion Matrix Heatmap" width="550"/>
@@ -119,7 +119,7 @@ This heatmap displays the model’s **classification performance per emotion**:
 
 **Interpretation:**  
 The matrix shows strong diagonal dominance, confirming that the model predicts most emotions correctly.  
-Occasional confusion occurs between semantically similar emotions — for example, *joy* and *love*, or *sadness* and *fear*, which is natural due to overlap in emotional expression.
+Occasional confusion occurs between semantically similar emotions, for example, *joy* and *love*, or *sadness* and *fear*, which is natural due to overlap in emotional expression.
 
 ---
 
