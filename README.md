@@ -1,26 +1,24 @@
-
----
-
 # RNN-LSTM-tweet-emotion
-Deep learning model using RNN-BiLSTM to detect emotions from tweets
+
+Deep learning model using RNN-BiLSTM to detect emotions from tweets.
 
 ---
 
 ## Tweet Emotion Recognition with TensorFlow
 
-This project demonstrates how to build and train a **Tweet Emotion Recognition model** using **TensorFlow** and the **Hugging Face Emotion Dataset**.  
+This project builds and trains a **Tweet Emotion Recognition model** using **TensorFlow** and the **Hugging Face Emotion Dataset**.
 The model classifies tweets into six basic emotions: `sadness`, `joy`, `love`, `anger`, `fear`, and `surprise`.
 
 ---
 
 ## Project Overview
 
-This project walks through a full **Natural Language Processing (NLP)** pipeline for emotion classification on tweets:
+The project covers a full **Natural Language Processing (NLP)** pipeline for emotion classification on tweets:
 
-1. **Data loading** from Hugging Face's public *emotion* dataset  
-2. **Preprocessing** using Keras Tokenizer (word-to-index mapping and padding)  
-3. **Model design** using a bidirectional LSTM architecture  
-4. **Training and validation** with early stopping  
+1. **Data loading** from Hugging Face's public *emotion* dataset
+2. **Preprocessing** using Keras Tokenizer (word-to-index mapping and padding)
+3. **Model design** using a bidirectional LSTM architecture
+4. **Training and validation** with early stopping
 5. **Evaluation and visualization** using confusion matrices and performance curves
 
 The final model achieves an accuracy of approximately **88%** on the test set.
@@ -52,26 +50,24 @@ The architecture is built with TensorFlow’s `Sequential` API:
 | **Bidirectional LSTM (20)** | Adds deeper contextual understanding |
 | **Dense (16, softmax)** | Outputs probability distribution across 6 emotion classes |
 
-**Loss:** `sparse_categorical_crossentropy`  
-**Optimizer:** `adam`  
+**Loss:** `sparse_categorical_crossentropy`
+**Optimizer:** `adam`
 **Metrics:** `accuracy`
 
 ---
 
 ## Training Details
 
-- **Epochs:** up to 20 (with early stopping)  
-- **Validation monitoring:** `val_accuracy`  
-- **Padding:** tweets truncated or padded to length 50  
-- **Vocabulary size:** 10,000 most frequent words  
+- **Epochs:** up to 20 (with early stopping)
+- **Validation monitoring:** `val_accuracy`
+- **Padding:** tweets truncated or padded to length 50
+- **Vocabulary size:** 10,000 most frequent words
 
 During training:
 
 ```
-
 Final validation accuracy: ~0.88
 Final validation loss: ~0.44
-
 ```
 
 ---
@@ -81,20 +77,16 @@ Final validation loss: ~0.44
 After training, the model was evaluated on the **test set (2,000 tweets)**:
 
 ```
-
 Test accuracy: 0.8805
 Test loss: 0.4871
-
 ```
 
 Random sample prediction:
 
 ```
-
 Sentence: "i just want that feeling of not caring about unnecessary stuff like i felt before"
 Predicted Emotion: love
-
-````
+```
 
 ---
 
@@ -102,34 +94,31 @@ Predicted Emotion: love
 
 ### 1. Training History
 
-The `show_history()` function plots **accuracy** and **loss** across epochs for both training and validation sets, helping track convergence and overfitting.
+The `show_history()` function plots **accuracy** and **loss** across epochs for both training and validation sets, to track convergence and overfitting.
 
-### 2. Confusion Matrix — `heatmap_result`
+### 2. Confusion Matrix
 
 <p align="center">
   <img src="heatmap_result.png" alt="Confusion Matrix Heatmap" width="550"/>
 </p>
 
-This heatmap displays the model’s **classification performance per emotion**:
+This heatmap shows the model’s **classification performance per emotion**:
 
-- **Rows** = True emotion labels  
-- **Columns** = Predicted emotion labels  
-- **Bright diagonal cells** = Correct predictions  
-- **Off-diagonal cells** = Misclassifications  
+- **Rows** = True emotion labels
+- **Columns** = Predicted emotion labels
+- **Bright diagonal cells** = Correct predictions
+- **Off-diagonal cells** = Misclassifications
 
-**Interpretation:**  
-The matrix shows strong diagonal dominance, confirming that the model predicts most emotions correctly.  
-Occasional confusion occurs between semantically similar emotions — for example, *joy* and *love*, or *sadness* and *fear*, which is natural due to overlap in emotional expression.
+The matrix shows strong diagonal dominance, so most emotions are predicted correctly.
+Some confusion occurs between similar emotions, for example *joy* and *love*, or *sadness* and *fear*, since they overlap in how they are expressed.
 
 ---
 
 ## Dependencies
 
-Make sure the following packages are installed:
-
 ```bash
 pip install tensorflow numpy matplotlib datasets
-````
+```
 
 Optional (for Hugging Face integration):
 
@@ -156,13 +145,9 @@ pip install nlp
 
 3. **Run all cells** or open the project in **Google Colab**.
 
-4. *(Optional)* To reproduce the final evaluation, ensure the Hugging Face dataset downloads successfully.
-
 ---
 
 ## Credits
 
 * **Dataset:** [dair-ai/emotion](https://github.com/dair-ai/emotion_dataset)
 * **Frameworks:** TensorFlow, Keras, Hugging Face Datasets
-
-
